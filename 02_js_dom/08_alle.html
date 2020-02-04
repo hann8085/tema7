@@ -1,19 +1,23 @@
-<!-- VIRKER IK
 <!DOCTYPE html>
-<html lang="">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>08 alle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A</title>
     <style>
         .typo {
             font-family: monospace;
-            color: red;
+            color: darkblue;
             line-height: 150%;
+        }
 
+        .typo2 {
+            font-family: sans-serif;
+            font-size: 2rem;
         }
     </style>
+
 </head>
 
 <body>
@@ -22,38 +26,25 @@
         RESET
     </button>
 
+
     <h3>En</h3>
-    <p>Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Rerum exercitationem illo et,
-        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
-        inventore voluptates voluptatem quas. Debitis,
-        iste,
-        soluta. </p>
+    <p>Gochujang blue bottle iPhone quinoa, umami lumbersexual semiotics disrupt coloring book squid. Tilde banjo flannel PBR&B umami vape plaid occupy prism lumbersexual man braid. </p>
     <h3>Lille</h3>
-    <p>Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Rerum exercitationem illo et,
-        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
-        inventore voluptates voluptatem quas. Debitis,
-        iste,
-        soluta. </p>
+    <p>Fam before they sold out edison bulb, la croix sartorial cray poke yuccie copper mug ugh. Kickstarter yr tumblr synth.</p>
     <h3>Bitte</h3>
-    <p>Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Rerum exercitationem illo et,
-        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
-        inventore voluptates voluptatem quas. Debitis,
-        iste,
-        soluta. </p>
+    <p>Selvage authentic heirloom put a bird on it umami sustainable bitters meh bicycle rights kombucha af squid. DIY air plant drinking vinegar XOXO raw denim ethical semiotics. </p>
+    <h3>Smule</h3>
+    <p>Roof party tumeric next level etsy church-key plaid. Fashion axe deep v tumeric kickstarter tofu narwhal direct trade. Hexagon gentrify pitchfork ethical echo park. </p>
     <h3>Tekst</h3>
-    <p>Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Rerum exercitationem illo et,
-        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
-        inventore voluptates voluptatem quas. Debitis,
-        iste,
-        soluta. </p>
+    <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+
+
     <script>
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
+
+
             let alleP = document.querySelectorAll("p");
 
             alleP.forEach(p => {
@@ -62,15 +53,23 @@
                 })
 
             })
-        }
 
+            let alleH3 = document.querySelectorAll("h3");
 
-        document.querySelectorAll("button").addEventListener("click", () => {
-            alleP.forEach(p => {
+            alleH3.forEach(h3 => {
+                h3.addEventListener("click", () => {
+                    h3.classList.add("typo2");
+                })
 
-                p.classList.remove("typo");
             })
-        })
+            document.querySelector("button").addEventListener("click", () => {
+                alleP.forEach(p => {
+
+                    p.classList.remove("typo");
+                })
+            })
+
+        }
     </script>
 </body></html>
--->
+
