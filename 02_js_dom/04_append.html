@@ -4,26 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03 billed indhold/title>
+    <title>04 append</title>
 
-        <style>
-            .firkant {
-                height: 100px;
-                width: 100px;
-                line-height: 100px;
-                text-align: center;
-                background: green;
-            }
+    <style>
+        .firkant {
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            background: green;
+        }
 
-            .cirkel {
-                height: 100px;
-                width: 100px;
-                line-height: 100px;
-                border-radius: 50%;
-                text-align: center;
-                background: red;
-            }
-        </style>
+        .cirkel {
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            background: red;
+        }
+    </style>
 
 </head>
 
@@ -37,9 +37,11 @@
     <script>
         let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`;
         let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+        let foxURL = `http://mabe-kea.dk/E19/pics/fox.png`;
 
 
         document.querySelector(".firkant").innerHTML = `<img src = ${firkantURL} alt= "grøn frø">`;
         document.querySelector(".cirkel").innerHTML = `<img src = ${cirkelURL} alt= "lyserød gris">`;
+        document.querySelector(".cirkel").innerHTML += `<img src = ${foxURL} alt= "rød ræv">`;
     </script>
 </body></html>
