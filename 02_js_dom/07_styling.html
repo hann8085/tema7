@@ -23,6 +23,7 @@
             text-align: center;
             background: red;
         }
+
     </style>
 
 </head>
@@ -52,6 +53,9 @@
             firkant.addEventListener("click", flyt);
             cirkel.addEventListener("click", stop);
 
+            firkant.style.cursor = "pointer;"
+            cirkel.style.cursor = "pointer;"
+
             function flyt() {
                 let firkantStart = firkant.innerHTML;
 
@@ -73,5 +77,8 @@
 
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

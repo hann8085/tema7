@@ -1,13 +1,76 @@
+<!-- VIRKER IK
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>08 alle</title>
+    <style>
+        .typo {
+            font-family: monospace;
+            color: red;
+            line-height: 150%;
+
+        }
+    </style>
 </head>
 
 <body>
-    <script src=""></script>
-</body>
-</html>
+
+    <button>
+        RESET
+    </button>
+
+    <h3>En</h3>
+    <p>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Rerum exercitationem illo et,
+        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
+        inventore voluptates voluptatem quas. Debitis,
+        iste,
+        soluta. </p>
+    <h3>Lille</h3>
+    <p>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Rerum exercitationem illo et,
+        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
+        inventore voluptates voluptatem quas. Debitis,
+        iste,
+        soluta. </p>
+    <h3>Bitte</h3>
+    <p>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Rerum exercitationem illo et,
+        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
+        inventore voluptates voluptatem quas. Debitis,
+        iste,
+        soluta. </p>
+    <h3>Tekst</h3>
+    <p>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Rerum exercitationem illo et,
+        obcaecati voluptas repellat nam tempora fugit nulla unde. Veritatis perspiciatis optio,
+        inventore voluptates voluptatem quas. Debitis,
+        iste,
+        soluta. </p>
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let alleP = document.querySelectorAll("p");
+
+            alleP.forEach(p => {
+                p.addEventListener("click", () => {
+                    p.classList.add("typo");
+                })
+
+            })
+        }
+
+
+        document.querySelectorAll("button").addEventListener("click", () => {
+            alleP.forEach(p => {
+
+                p.classList.remove("typo");
+            })
+        })
+    </script>
+</body></html>
+-->
