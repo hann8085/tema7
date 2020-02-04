@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 array</title>
+
+    <style>
+        body {
+            color: #b2c6ed;
+            font-family: sans-serif;
+            background-color: white;
+        }
+
+        #display {
+            width: 30vw;
+            height: 40vw;
+            border: 2px solid #b2c6ed;
+            margin: 7vw;
+            padding: 1vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="display"></div>
+
+    <script>
+        let playlist = ["Sound of Music", "Dancing in the Rain", "What a wonderful world", "music of sound", "rain in the dancing", "what world wonderful", "sound of dancing in world", "rain in world music", "music rain sound danicng", "what a musivc"];
+
+        playlist.forEach(sang => {
+            document.querySelector("#display").innerHTML += `${sang} <br>`;
+        })
+    </script>
+</body></html>
