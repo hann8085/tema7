@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03 billed indhold</title>
+    <title>05 testload </title>
 
     <style>
         .firkant {
@@ -38,8 +38,12 @@
         let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`;
         let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`;
 
+        document.addEventListener("DOMContentLoaded", start);
 
-        document.querySelector(".firkant").innerHTML = `<img src = ${firkantURL} alt= "grøn frø">`;
-        document.querySelector(".cirkel").innerHTML = `<img src = ${cirkelURL} alt= "lyserød gris">`;
+        function start() {
+            console.log("start");
+            document.querySelector(".firkant").innerHTML = `<img src = ${firkantURL} alt= "grøn frø">`;
+            document.querySelector(".cirkel").innerHTML = `<img src = ${cirkelURL} alt= "lyserød gris">`;
+        }
     </script>
 </body></html>
