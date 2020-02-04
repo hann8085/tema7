@@ -7,11 +7,6 @@
     <title>02 indhold</title>
 
     <style>
-        txt {
-            font-family: sans-serif;
-            color: white;
-        }
-
         .firkant {
             height: 100px;
             width: 100px;
@@ -34,17 +29,17 @@
 
 <body>
 
-    <div class="firkant">
-
-    </div>
-    <div class="cirkel">
-
-    </div>
+    <div class="firkant"></div>
+    <div class="cirkel"></div>
 
 
 
     <script>
-        document.querySelector(".firkant").textContent = "Grøn firkant";
-        document.querySelector(".cirkel").textContent = "Rød cirkel";
+        let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`;
+        let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+
+
+        document.querySelector(".firkant").innerHTML = `<img src = ${firkantURL} alt= "grøn frø">`;
+        document.querySelector(".cirkel").innerHTML = `<img src = ${cirkelURL} alt= "lyserød gris">`;
     </script>
 </body></html>
