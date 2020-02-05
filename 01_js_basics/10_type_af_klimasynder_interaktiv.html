@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 type af klimasynder</title>
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1.5em;
+        }
+
+
+        button {
+            border-color: blue;
+            font-size: 0.7em;
+            text-align: left;
+            padding: 0.5em;
+
+        }
+
+        input {}
+    </style>
+</head>
+
+<body>
+
+    <p>Angiv flyrejsens længde i timer</p>
+    <input type="text" id="timer">
+
+    <button>Kig i consolen for at se din <br>flyrejses CO2-udledning</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        document.querySelector("button").addEventListener("click", button_clicked);
+
+
+        function start() {}
+
+
+        function button_clicked() {
+            let timer = document.querySelector("#timer").value;
+
+
+
+            let co2UdledtKgVedFlyrejse = timer * 109;
+
+
+            if (isNaN) {
+                alert("Brug kun tal.");
+
+            } else if (co2UdledtKgVedFlyrejse < 100) {
+                console.log(`Ved ${timer} timers flyrejse har du udeldt ${co2UdledtKgVedFlyrejse} kg CO2.Tæt på Thunberg`);
+            } else if (co2UdledtKgVedFlyrejse < 200) {
+                console.log(`Ved ${timer} timers flyrejse har du udeldt ${co2UdledtKgVedFlyrejse} kg CO2.Ja ja du behøver ikke at melde dig ud af Å!.`);
+
+            } else if (co2UdledtKgVedFlyrejse < 600) {
+                console.log(`Ved ${timer} timers flyrejse har du udeldt ${co2UdledtKgVedFlyrejse} kg CO2.Det er godt for turismen i nordeuropa.`);
+            } else {
+                console.log(`Ved ${timer} timers flyrejse har du udeldt ${co2UdledtKgVedFlyrejse} kg CO2.Nå ja vi kan jo altid kolonisere en anden planet...`);
+            }
+
+
+
+
+
+
+
+
+        }
+    </script>
+</body></html>
