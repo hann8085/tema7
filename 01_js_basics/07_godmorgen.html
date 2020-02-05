@@ -12,25 +12,21 @@
 
 
 
-
-    <script src="">
+    <script>
         let time = new Date().getHours();
         let hilsen;
 
         if (time < 5) {
             hilsen = "Godnat";
-        } else if (tinme < 10) {
+        } else if (time < 10) {
             hilsen = "Godmorgen";
 
-        } else if (tinme < 18) {
+        } else if (time < 18) {
             hilsen = "Goddag";
         } else {
             hilsen = "Godaften";
         }
 
         console.log(hilsen);
-
     </script>
-</body>
-
-</html>
+</body></html>
