@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            background-color: #c0d6e8;
+        }
+
+        .data_container {
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+            justify-content: center;
+            margin-top: 10vw;
+        }
+
+        .dyr {
+            box-shadow: 3px 3px 5px #afafaf;
+            width: 200px;
+            padding: 2vw;
+            margin: 0.5vw;
+            background-color: white;
+        }
+
+        h3 {
+            text-transform: capitalize;
+            background-color: white;
+        }
+
+        img {
+            padding-top: 2vw;
+
+            background-color: white;
+            width: 100%;
+        }
+
+        p {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="data_container"> </section>
+    <template>
+
+        <article class="dyr">
+            <h3></h3>
+            <p class="type">Type: </p>
+            <p class="levested">Levested: </p>
+            <img src="" alt="">
+        </article>
+
+    </template>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        let dyr = [];
+
+        function start() {
+            loadDyrData();
+        }
+
+
+
+        async function loadDyrData() {
+            const response = await fetch("alledyr.json");
+            console.log(response);
+
+            dyr = await response.json();
+            console.log(dyr);
+
+
+            visDyr();
+        }
+
+
+        function visDyr() {
+            const container = document.querySelector(".data_container");
+            const dyrTemplate = document.querySelector("template");
+            const dyrTemplate = document.querySelector("template");
+
+
+
+            dyr.forEach(dyr => {
+
+                let klon = dyrTemplate.cloneNode(true).content;
+
+                klon.querySelector("h3").textContent += dyr.navn;
+                klon.querySelector("img").src = dyr.billede;
+                klon.querySelector(".type").textContent += dyr.type;
+                klon.querySelector(".levested").textContent += dyr.levested;
+                container.appendChild(klon);
+
+
+            })
+
+        }
+    </script>
+</body></html>
